@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"nrtx\startup_stm32f103xb.o"
+"nrtx\main.o"
+"nrtx\stm32f1xx_it.o"
+"nrtx\stm32f1xx_hal_msp.o"
+"nrtx\stm32f1xx_hal_gpio_ex.o"
+"nrtx\stm32f1xx_hal_spi.o"
+"nrtx\stm32f1xx_hal.o"
+"nrtx\stm32f1xx_hal_rcc.o"
+"nrtx\stm32f1xx_hal_rcc_ex.o"
+"nrtx\stm32f1xx_hal_gpio.o"
+"nrtx\stm32f1xx_hal_dma.o"
+"nrtx\stm32f1xx_hal_cortex.o"
+"nrtx\stm32f1xx_hal_pwr.o"
+"nrtx\stm32f1xx_hal_flash.o"
+"nrtx\stm32f1xx_hal_flash_ex.o"
+"nrtx\stm32f1xx_hal_exti.o"
+"nrtx\stm32f1xx_hal_tim.o"
+"nrtx\stm32f1xx_hal_tim_ex.o"
+"nrtx\stm32f1xx_hal_uart.o"
+"nrtx\system_stm32f1xx.o"
+"nrtx\my_nrf24.o"
+--strict --scatter "NRTX\NRTX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NRTX.map" -o NRTX\NRTX.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"nrrx\startup_stm32f103xb.o"
+"nrrx\main.o"
+"nrrx\stm32f1xx_it.o"
+"nrrx\stm32f1xx_hal_msp.o"
+"nrrx\stm32f1xx_hal_gpio_ex.o"
+"nrrx\stm32f1xx_hal_spi.o"
+"nrrx\stm32f1xx_hal.o"
+"nrrx\stm32f1xx_hal_rcc.o"
+"nrrx\stm32f1xx_hal_rcc_ex.o"
+"nrrx\stm32f1xx_hal_gpio.o"
+"nrrx\stm32f1xx_hal_dma.o"
+"nrrx\stm32f1xx_hal_cortex.o"
+"nrrx\stm32f1xx_hal_pwr.o"
+"nrrx\stm32f1xx_hal_flash.o"
+"nrrx\stm32f1xx_hal_flash_ex.o"
+"nrrx\stm32f1xx_hal_exti.o"
+"nrrx\stm32f1xx_hal_tim.o"
+"nrrx\stm32f1xx_hal_tim_ex.o"
+"nrrx\stm32f1xx_hal_uart.o"
+"nrrx\system_stm32f1xx.o"
+"nrrx\my_nrf24.o"
+--strict --scatter "NRRX\NRRX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NRRX.map" -o NRRX\NRRX.axf
